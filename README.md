@@ -22,8 +22,8 @@
      - [Clans for Party and Friends Extended](https://www.spigotmc.org/resources/clans-for-party-and-friends-extended.13890/)
      - [Party and Friends Extended Edition](https://www.spigotmc.org/resources/party-and-friends-extended-edition-for-bungeecord-velocity-supports-1-7-1-21-x.10123/)
      - [PVP Stats](https://www.spigotmc.org/resources/pvp-stats.59124/)
-     - [Velocity](https://papermc.io/software/velocity).
-
+   - Velocity proxy is required and can be found [here](https://papermc.io/software/velocity).
+   
 ## Configuration
 
 1. **Create/Edit Configuration File**:
@@ -40,3 +40,45 @@ database = "pvpstats"
 
 [plugin]
 name = "PvP-Stats"  # Default name, can be customized
+```
+
+- `host`: The database server address.
+- `port`: The port for the database server.
+- `user`: The database username.
+- `password`: The database password.
+- `database`: The name of the database to connect to.
+- `name`: The name of the plugin, which can be customized.
+
+2. **Customize Plugin Name**:
+   - To customize the plugin name, modify the `name` field in the `config.toml` file. The default is `"PvP-Stats"`, but you can set it to any string you prefer.
+
+## Usage
+
+- **Reloading the Plugin**: Use the `/psc reload` command to reload the plugin configuration.
+- **Viewing Player Stats**: The plugin will automatically retrieve and display player stats as defined in the database.
+
+## Troubleshooting
+
+- **Plugin Not Loading**: Ensure all dependencies are correctly installed and loaded before PVPStatsForClans.
+- **Database Errors**: Check the database connection details in the `config.toml` file and ensure the database is accessible.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For support or inquiries, please contact [itzMiney](mailto:your-email@example.com).
+
+---
+
+Enjoy using **PVPStatsForClans**! If you have any questions or need help, feel free to open an issue or contact us directly.
+
