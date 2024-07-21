@@ -173,7 +173,7 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
                 return;
             }
             statCommand.registerClanStats(this, this);
-        }, 5, TimeUnit.SECONDS); // 5 seconds delay
+        }, 20, TimeUnit.SECONDS); // 20 seconds delay
     }
 
     @Override
