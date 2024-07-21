@@ -51,6 +51,7 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
     private final ProxyServer proxyServer;
     private final Path dataDirectory;
     private DatabaseManager databaseManager;
+    private String pluginName;
 
     @Inject
     public PVPStatsForClans(@DataDirectory Path folder, Logger logger, ProxyServer proxyServer) {
@@ -121,6 +122,9 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
         String password = toml.getString("database.password");
         String database = toml.getString("database.database");
 
+        // Set plugin name from config
+        pluginName = toml.getString("plugin.name", "PvP-Stats"); // Default to "PvP-Stats" if not specified
+
         // Construct the JDBC URL
         String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
 
@@ -178,7 +182,7 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
 
     @Override
     public String getName() {
-        return "KitPvP-Stats";
+        return pluginName; // Use the configurable name
     }
 
     @Override

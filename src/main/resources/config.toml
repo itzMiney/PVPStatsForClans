@@ -7,4 +7,5 @@ user = "yourusername"
 password = "yourpassword"
 database = "yourdatabase"
 
-# Other plugin-specific configurations can go here
+[plugin]
+name = "PvP-Stats"  # Default plugin name, can be customized
