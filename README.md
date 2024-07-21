@@ -1,4 +1,4 @@
-![https://discord.gg/pnhSzb9](https://img.shields.io/discord/712313516542918717?color=%2333cc33&label=itzMiney's%20Hideout%20Discord)
+![https://discord.gg/RstBa889](https://img.shields.io/discord/350718076280504322?color=%2333cc33&label=itzMiney's%20Hideout%20Discord)
 ![](https://img.shields.io/github/contributors/itzMiney/PVPStatsForClans)
 ![](https://img.shields.io/github/issues-pr/itzMiney/PVPStatsForClans)
 ![](https://img.shields.io/github/issues-pr-closed/itzMiney/PVPStatsForClans)
