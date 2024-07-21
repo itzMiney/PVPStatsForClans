@@ -1,0 +1,10 @@
+# config.toml
+
+[database]
+host = "localhost"
+port = 3306
+user = "yourusername"
+password = "yourpassword"
+database = "yourdatabase"
+
+# Other plugin-specific configurations can go here
