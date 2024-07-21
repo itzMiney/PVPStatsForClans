@@ -76,7 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For support or inquiries, please contact [itzMiney](mailto:your-email@example.com).
+For support or inquiries, please contact [itzMiney](mailto:itzminey@proton.me).
 
 ---
 
