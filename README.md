@@ -1,3 +1,11 @@
+![https://discord.gg/pnhSzb9](https://img.shields.io/discord/712313516542918717?color=%2333cc33&label=itzMiney's%20Hideout%20Discord)
+![](https://img.shields.io/github/contributors/itzMiney/PVPStatsForClans)
+![](https://img.shields.io/github/issues-pr/itzMiney/PVPStatsForClans)
+![](https://img.shields.io/github/issues-pr-closed/itzMiney/PVPStatsForClans)
+![](https://img.shields.io/github/forks/itzMiney/PVPStatsForClans?label=Forks)
+![](https://img.shields.io/github/commit-activity/m/itzMiney/PVPStatsForClans)
+![](https://img.shields.io/github/stars/itzMiney/PVPStatsForClans?label=Stars)
+
 # PVPStatsForClans
 
 **PVPStatsForClans** is a plugin designed for tracking player stats in PvP-based Minecraft servers. It integrates with the Party and Friends plugin and provides detailed statistics for clans. This plugin supports Velocity proxy servers and is intended to be used with for a PvP Server but can be customized for other PvP configurations like KitPvP.
