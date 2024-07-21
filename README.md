@@ -2,6 +2,10 @@
 
 **PVPStatsForClans** is a plugin designed for tracking player stats in PvP-based Minecraft servers. It integrates with the Party and Friends plugin and provides detailed statistics for clans. This plugin supports Velocity proxy servers and is intended to be used with for a PvP Server but can be customized for other PvP configurations like KitPvP.
 
+
+## TO-DO
+- Add BuingeeCord support
+
 ## Features
 
 - Track and manage player statistics for clans.
