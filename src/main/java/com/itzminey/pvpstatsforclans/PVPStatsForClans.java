@@ -72,7 +72,7 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
         // Log initialization
         logger.info("\033[0;31m  ____  ___   ___\033[0m");
         logger.info("\033[0;31m /___/ /___  /     \033[0;32mPVPStatsForClans\033[0m");
-        logger.info("\033[0;31m/      ___/  \\___  \033[0;34mv1.0.0 Enabled\033[0m");
+        logger.info("\033[0;31m/      ___/  \\___  \033[0;34mv1.0.1 Enabled\033[0m");
         logger.info("\033[0m");
 
         // Load configuration
