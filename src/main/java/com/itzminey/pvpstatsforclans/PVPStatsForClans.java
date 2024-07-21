@@ -42,7 +42,7 @@ import net.kyori.adventure.text.Component;
 @Plugin(
         id = "pvpstatsforclans",
         name = "PVPStatsForClans",
-        version = "1.0.0",
+        version = "1.0.1",
         authors = {"itzMiney"}
 )
 public class PVPStatsForClans extends PAFExtension implements ClanStat {
