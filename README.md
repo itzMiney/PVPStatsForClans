@@ -4,7 +4,7 @@
 
 
 ## TO-DO
-- Add BuingeeCord support
+- Add BungeeCord support
 
 ## Features
 
