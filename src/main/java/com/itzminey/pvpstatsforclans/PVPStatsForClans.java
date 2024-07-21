@@ -33,6 +33,9 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import net.kyori.adventure.text.Component;
 
@@ -156,18 +159,21 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
 
     @Override
     public void onEnable() {
-        // Register commands
-        ClanCommands clanCommandInstance = ClanCommands.getInstance();
-        if (clanCommandInstance == null) {
-            logger.error("Failed to retrieve ClanCommands instance. Ensure PartyAndFriends plugin is loaded and initialized.");
-            return;
-        }
-        Stats statCommand = (Stats) clanCommandInstance.getSubCommand(Stats.class);
-        if (statCommand == null) {
-            logger.error("Failed to retrieve Stats subcommand. Ensure the subcommand is properly registered in PartyAndFriends.");
-            return;
-        }
-        statCommand.registerClanStats(this, this);
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+        scheduler.schedule(() -> {
+            // Register commands after delay
+            ClanCommands clanCommandInstance = ClanCommands.getInstance();
+            if (clanCommandInstance == null) {
+                logger.error("Failed to retrieve ClanCommands instance. Ensure PartyAndFriends plugin is loaded and initialized.");
+                return;
+            }
+            Stats statCommand = (Stats) clanCommandInstance.getSubCommand(Stats.class);
+            if (statCommand == null) {
+                logger.error("Failed to retrieve Stats subcommand. Ensure the subcommand is properly registered in PartyAndFriends.");
+                return;
+            }
+            statCommand.registerClanStats(this, this);
+        }, 5, TimeUnit.SECONDS); // 5 seconds delay
     }
 
     @Override
