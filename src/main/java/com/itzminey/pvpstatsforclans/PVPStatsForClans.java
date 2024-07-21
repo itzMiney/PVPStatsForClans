@@ -201,7 +201,6 @@ public class PVPStatsForClans extends PAFExtension implements ClanStat {
         }
 
         // Send a message to the player with the combined stats
-        pSender.sendMessage(Component.text("§7Clan Stats:"));
         pSender.sendMessage(Component.text("§7Total Kills: " + totalKills));
         pSender.sendMessage(Component.text("§7Total Deaths: " + totalDeaths));
     }
